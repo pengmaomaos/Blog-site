@@ -6,6 +6,44 @@ const pageTitle = "首页";
 
 <BaseLayout pageTitle={pageTitle}>
   <h2>My awesome blog subtitle</h2>
-
+  <div class="image-container">
+    <p>Learning address</p>
+    <img src="../../public/images/js.jpg" alt="图片1" />
+    <img src="../../public/images/astro.jpg" alt="图片2" />
+    <img src="../../public/images/vue.jpg" alt="图片3" />
+    <img src="../../public/images/css.jpg" alt="图片4" />
+  </div>
   <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>
+
+<style>
+  .image-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .image-container p {
+    width: 100%;
+    font-size: 30px;
+    color: pink;
+  }
+  .image-container img {
+    width: 45%;
+    height: 350px;
+    object-fit: cover;
+    float: left;
+    margin: 10px;
+  }
+  @media screen and (max-width: 636px) {
+    .image-container img {
+      width: 380px;
+      height: 430px;
+      object-fit: cover;
+      float: left;
+      margin: 10px;
+    }
+  }
+</style>
