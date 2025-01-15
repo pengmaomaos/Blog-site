@@ -5,7 +5,7 @@ pubDate: 2025-01-15
 description: "这是我 Astro 博客的第一篇文章。"
 author: "Astro 学习者"
 image:
-  url: "https://docs.astro.build/assets/rose.webp"
+  url: "https://puui.qpic.cn/vcover_vt_pic/0/m63g578728dv56w1585271374/0"
   alt: "The Astro logo on a dark background with a pink glow."
 tags: ["astro", "blogging", "learning in public"]
 ---
